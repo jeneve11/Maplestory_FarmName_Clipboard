@@ -31,8 +31,8 @@ def letsDelete():
            f.writelines(farm + '\n')
         f.close()
         
-btn_1 = tkinter.Button(window, height=20, width=40, text='다음 농장', command = letsGo).grid(row=0, column=1)
-btn_2 = tkinter.Button(window, height=20, width=40, text='다음 농장(삭제)', command = letsDelete).grid(row=0, column=2)
+btn_1 = tkinter.Button(window, height=20, width=40, text='Next Farm', command = letsGo).grid(row=0, column=1)
+btn_2 = tkinter.Button(window, height=20, width=40, text='Next Farm(Delete)', command = letsDelete).grid(row=0, column=2)
 entry.grid(row=1, column=0, columnspan=2)
 
 file_name = input("Input your text file name: ") + '.txt'
