@@ -35,6 +35,7 @@ btn_1 = tkinter.Button(window, height=20, width=40, text='다음 농장', comman
 btn_2 = tkinter.Button(window, height=20, width=40, text='다음 농장(삭제)', command = letsDelete).grid(row=0, column=2)
 entry.grid(row=1, column=0, columnspan=2)
 
+# input 함수말고 gui로 만들면 좋겠다
 file_name = input("Input your text file name: ") + '.txt'
 f = open(file_name, 'r', encoding = 'utf-8')
 line = f.readline()
